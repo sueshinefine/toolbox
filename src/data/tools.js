@@ -1,7 +1,8 @@
 export const toolGroups = [
   { key: 'codec', name: '编码与转换' },
   { key: 'text', name: '文本处理' },
-  { key: 'dev', name: '开发辅助' }
+  { key: 'dev', name: '开发辅助' },
+  { key: 'personal', name: '个人工具' }
 ]
 
 export const tools = [
@@ -51,6 +52,24 @@ export const tools = [
     tags: ['颜色', 'HEX', 'RGB', 'HSL']
   },
   {
+    id: 'color-picker',
+    name: '色值识别',
+    file: 'ColorPicker',
+    icon: '🖌️',
+    group: 'dev',
+    description: '从图片中提取主色调，在图上标注色值并一键复制',
+    tags: ['颜色', '取色', '图片']
+  },
+  {
+    id: 'photo-3d',
+    name: '3D 展示',
+    file: 'Photo3D',
+    icon: '🧊',
+    group: 'dev',
+    description: '上传照片后在 3D 空间里任意角度旋转、翻面查看',
+    tags: ['3D', '照片', '预览', '翻转']
+  },
+  {
     id: 'uuid',
     name: 'UUID 生成',
     file: 'UuidGenerator',
@@ -76,6 +95,24 @@ export const tools = [
     group: 'dev',
     description: '自定义字符集，生成高强度随机密码',
     tags: ['密码', '安全']
+  },
+  {
+    id: 'pixel-mario',
+    name: '前端像素测试学习',
+    file: 'PixelMario',
+    icon: '🍄',
+    group: 'dev',
+    description: '全像素手绘的马里奥式顶蘑菇小游戏，顺带体验整数倍像素缩放',
+    tags: ['像素', 'Canvas', '游戏', '缩放']
+  },
+  {
+    id: 'weather',
+    name: '天气对比',
+    file: 'Weather',
+    icon: '🌦️',
+    group: 'personal',
+    description: '查看城市近 7 天天气，对比历史年份同期温度变化',
+    tags: ['天气', '温度', '历史对比']
   },
   {
     id: 'text-counter',
